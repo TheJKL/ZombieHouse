@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerLook : MonoBehaviour
 {
     public new Camera camera;
+    [HideInInspector]
+    public float angle;
 
     void Start()
     {
@@ -17,7 +19,7 @@ public class PlayerLook : MonoBehaviour
         Vector2 playerPos = new Vector2(transform.position.x, transform.position.y);
         Vector2 lookRot = mousePos - playerPos;
 
-        float angle = Mathf.Atan2(lookRot.y, lookRot.x) * Mathf.Rad2Deg;
+        angle = Mathf.Atan2(lookRot.y, lookRot.x) * Mathf.Rad2Deg;
         transform.eulerAngles = Vector3.forward * angle;
     }
 }
