@@ -12,9 +12,6 @@ public class bullet : MonoBehaviour
         {
             hit.damage(damage);
         }
-        if ((noHit.value & (1 << collision.gameObject.layer)) == 0)
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }
