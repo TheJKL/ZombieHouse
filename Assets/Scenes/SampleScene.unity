@@ -170,7 +170,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2483915005568166071, guid: 7024a293a6223e840a7e19d01653d888,
     type: 3}
   playerSprite: {fileID: 2113508179}
-  bulletVelocity: 2
+  bulletVelocity: 20
 --- !u!1 &284261247
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 601127454}
   - component: {fileID: 601127451}
   - component: {fileID: 601127455}
+  - component: {fileID: 601127456}
   m_Layer: 8
   m_Name: Character
   m_TagString: Untagged
@@ -406,8 +407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveForce: 100
   maxSpeed: 10
---- !u!61 &601127455
-BoxCollider2D:
+--- !u!58 &601127455
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -420,18 +421,21 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 0.2, y: 0.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.2}
-  m_EdgeRadius: 0
+  m_Radius: 0.09
+--- !u!114 &601127456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601127450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52623d5a5448fee4692082aff8626d52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
 --- !u!1 &805320115
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +650,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2427630275213802672, guid: 3256df31d7436594799bf946a3485f06,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2428332596238547572, guid: 3256df31d7436594799bf946a3485f06,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 601127450}
     - target: {fileID: 3918546398488348660, guid: 3256df31d7436594799bf946a3485f06,
         type: 3}
       propertyPath: m_Name
