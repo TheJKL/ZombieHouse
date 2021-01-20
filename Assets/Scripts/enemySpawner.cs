@@ -14,6 +14,8 @@ public class enemySpawner : MonoBehaviour
     {
         nextSpawnTime = Time.time + spawnTime;
         boards = maxBoards;
+
+        GameObject.FindWithTag("GameController").GetComponent<GameController>().addSpawner(this); //add spawner to controller list
     }
 
     void Update()
