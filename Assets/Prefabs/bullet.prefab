@@ -121,7 +121,7 @@ MonoBehaviour:
   noHit:
     serializedVersion: 2
     m_Bits: 256
-  damage: 1
+  damage: 1000
 --- !u!61 &8700795573195289082
 BoxCollider2D:
   m_ObjectHideFlags: 0

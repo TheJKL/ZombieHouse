@@ -618,6 +618,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4897955369582674123, guid: 9905b45ae65e22b4e8e0283fe3690df5,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 601127450}
     - target: {fileID: 4897955370380344130, guid: 9905b45ae65e22b4e8e0283fe3690df5,
         type: 3}
       propertyPath: m_Name
@@ -710,6 +715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawners: []
+  spawnAttemptInterval: 5
 --- !u!4 &1521449105
 Transform:
   m_ObjectHideFlags: 0
