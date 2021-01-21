@@ -227,6 +227,7 @@ MonoBehaviour:
   player: {fileID: 0}
   windowBoard: {fileID: 4897955370419593822}
   maxBoards: 3
+  counter: {fileID: 5392663322429066668}
 --- !u!61 &4897955369582674125
 BoxCollider2D:
   m_ObjectHideFlags: 0
