@@ -336,6 +336,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2483915005568166071, guid: 7024a293a6223e840a7e19d01653d888,
     type: 3}
   playerSprite: {fileID: 2113508179}
+  stats: {fileID: 601127456}
   bulletVelocity: 20
 --- !u!1 &284261247
 GameObject:
@@ -682,6 +683,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  maxAmmo: 100
+  startAmmo: 20
+  healthUI: {fileID: 347932642}
+  ammoUI: {fileID: 798243692}
 --- !u!1 &798243690
 GameObject:
   m_ObjectHideFlags: 0

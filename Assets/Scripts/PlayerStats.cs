@@ -6,9 +6,9 @@ public class PlayerStats : MonoBehaviour
     
     public float maxHealth;
     private float health;
-    public float maxAmmo;
-    public float startAmmo;
-    private float ammo;
+    public int maxAmmo;
+    public int startAmmo;
+    private int ammo;
     public Text healthUI;
     public Text ammoUI;
 
@@ -34,6 +34,11 @@ public class PlayerStats : MonoBehaviour
     {
         ammo += increment;
         ammoUI.text = $"{ammo}/{maxAmmo}";
+    }
+
+    public int getAmmo()
+    {
+        return ammo;
     }
 
     public void updateHealth()
