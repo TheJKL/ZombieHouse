@@ -1218,6 +1218,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2272199755832609224, guid: 3256df31d7436594799bf946a3485f06,
+        type: 3}
+      propertyPath: damageCooldown
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2427630275213802672, guid: 3256df31d7436594799bf946a3485f06,
         type: 3}
       propertyPath: m_Constraints

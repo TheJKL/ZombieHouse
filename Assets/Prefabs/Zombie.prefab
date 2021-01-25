@@ -200,3 +200,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  damageCooldown: 2
