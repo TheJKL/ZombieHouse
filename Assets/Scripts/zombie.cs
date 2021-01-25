@@ -8,6 +8,9 @@ public class zombie : MonoBehaviour
     public float moveSpeed;
     public float moveForce;
 
+    public float ammoDropChance;
+    public GameObject ammoBox;
+
     void Update()
     {
         Vector2 playerPos = player.transform.position;
@@ -26,8 +29,17 @@ public class zombie : MonoBehaviour
         health -= dmg;
         if(health <= 0)
         {
-            Destroy(gameObject);
+            kill();
         }
+    }
+
+    public void kill()
+    {
+        if(Random.Range(0f,100f) < ammoDropChance)
+        {
+            Instantiate(ammoBox,transform.position,Quaternion.identity);
+        }
+        Destroy(gameObject);
     }
 
     public void setTarget(GameObject target)
